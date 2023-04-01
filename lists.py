@@ -1,7 +1,7 @@
 '''
 Lists are used to store multiple items in a single variable.
 List items are ordered, changeable, and allow duplicate values.
-List items are indexed.Index always starts with 0.
+List items are indexed and nested.Index always starts with 0.
 Negative indexing works as well. -1 refers to the last item, -2 refers to the 2nd-last item.
 List may be of different types(heterogeneous)
 '''
@@ -91,7 +91,7 @@ print("Index for April: ", alist.index('April'))
 alist.insert(2, 'babe')
 print("Inserted list: ", alist)
 
-#pop() - removes object from the list. if called empty, it removes random object
+#pop() - removes object from the list. if called empty, it removes last object in the list
 print("A list: ", alist.pop())
 print("B list: ", alist.pop(-1))
 
