@@ -45,5 +45,30 @@ so = ['do', 're', 'mi', 'fa' ]
 so[1:3] = ['la', 'ti']
 print(so)
 
+#Basic list operations
+#List responds to all general sequence operations
+#To find the length of a list
+data = [30, 40, 50, 60]
+info = ['dog', 'gum', 'mot']
+
+print(len(data))
+
+#Concatenation
+print("Concatenated: ", data + info)
+
+#Repititon
+wear = ['beads']
+print("Repeated: ", wear*4)
+
+# Membership/Boolean
+print('dog' in info) 
+
+#Iteration
+for data in data:
+    print(data)
+    
 #Methods in Lists
-#Append items
+#Append items - appends object to the list.
+alist = [90, 'zobo', 29, 'vum']
+alist.append('grit')
+print("Updated list: ", alist)
