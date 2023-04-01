@@ -68,7 +68,51 @@ for data in data:
     print(data)
     
 #Methods in Lists
-#Append items - appends object to the list.
-alist = [90, 'zobo', 29, 'vum']
+alist = [90, 'zobo', 29, 'vum', 90]
+
+#append() - appends object to the list.
 alist.append('grit')
 print("Updated list: ", alist)
+
+#count() - returns the count of how many times object occurs in list.
+print("Count for 90: ", alist.count(90))
+print("Count for zobo: ", alist.count('zobo'))
+
+#extend() - this method does not return any value but add the content to existing list
+blist =['April', 'fool']
+alist.extend(blist)
+print("Extended list: ", alist)
+
+#index() - returns the index of the found object.
+#Otherwise raise an exception indicating value not found.
+print("Index for April: ", alist.index('April'))
+
+#insert() - inserts the given element at the given index.
+alist.insert(2, 'babe')
+print("Inserted list: ", alist)
+
+#pop() - removes object from the list. if called empty, it removes random object
+print("A list: ", alist.pop())
+print("B list: ", alist.pop(-1))
+
+#remove() - removes given object from the list
+alist.remove('vum')
+print("Fresh list: ", alist)
+alist.remove('grit')
+print("Another fresh list: ", alist)
+
+#.reverse() - reverses the given object from the lsit
+alist.reverse()
+print("Final list: ", alist)
+
+#sort() - it changes the original list by sorting it in either ascending or descending order.
+print("Normal list: ", alist)
+alist.sort()
+print("Sorted list: ", alist)
+
+#built-in functions
+#len()- returns the lenght of a list
+#list()- creates a new list (list construct)//converts tupule to list
+#max()- returns items from the list with max value
+#min()- returns intems from list with min value
+#cmp()- compares elements of both lists
